@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Climbotics — Your Australian Partner in High-Rise Construction</title>
+  <meta name="description" content="Building long-term partnerships with equipment manufacturers to bring advanced construction systems to Australia.">
+  <meta property="og:title" content="Climbotics — Your Australian Partner in High-Rise Construction">
+  <meta property="og:description" content="Building long-term partnerships with equipment manufacturers to bring advanced construction systems to Australia.">
+  <meta property="og:image" content="https://climbotics.com/assets/og-image.jpg">
+  <meta property="og:url" content="https://climbotics.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://climbotics.com/">
+  <link rel="preload" as="image" href="assets/hero.webp" type="image/webp">
+  <style>
+    :root {
+      --ink: #f4f1ea;
+      --ink-soft: rgba(244, 241, 234, 0.82);
+      --night: #0b1220;
+      --amber: #f2a71b;
+      --amber-hover: #ffbb3d;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--night);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .hero picture, .hero img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .hero img {
+      object-fit: cover;
+      object-position: 22% 40%;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 85% 72% at 0% 100%, rgba(8, 13, 24, 0.92) 0%, rgba(8, 13, 24, 0.82) 50%, rgba(8, 13, 24, 0) 100%),
+        linear-gradient(0deg, rgba(8, 13, 24, 0.6) 0%, rgba(8, 13, 24, 0) 40%),
+        linear-gradient(180deg, rgba(8, 13, 24, 0.35) 0%, rgba(8, 13, 24, 0) 18%);
+    }
+    .brand, .content { position: relative; z-index: 1; }
+    .brand {
+      padding: 28px clamp(16px, 6vw, 88px);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+    }
+    .brand span { color: var(--amber); }
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 clamp(16px, 6vw, 88px) clamp(48px, 11vh, 120px);
+      max-width: 860px;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 4.8vw, 4.2rem);
+      max-width: 15em;
+      line-height: 1.05;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+      text-shadow: 0 2px 28px rgba(0, 0, 0, 0.45);
+    }
+    .sub {
+      margin-top: 1.4rem;
+      max-width: 34em;
+      font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+      line-height: 1.5;
+      color: var(--ink-soft);
+      text-shadow: 0 1px 16px rgba(0, 0, 0, 0.5);
+      text-wrap: pretty;
+    }
+    .cta {
+      align-self: flex-start;
+      margin-top: 2.4rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6em;
+      padding: 0.95em 1.7em;
+      background: var(--amber);
+      color: #14100a;
+      font-weight: 650;
+      font-size: 1.05rem;
+      text-decoration: none;
+      border-radius: 3px;
+      transition: background 0.18s ease, transform 0.18s ease;
+    }
+    .cta:hover { background: var(--amber-hover); transform: translateY(-1px); }
+    .cta:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+    .cta svg { width: 1.1em; height: 1.1em; }
+    @media (max-width: 640px) {
+      .hero img { object-position: 72% 50%; }
+      .hero::after {
+        background: linear-gradient(180deg, rgba(8, 13, 24, 0.55) 0%, rgba(8, 13, 24, 0.78) 45%, rgba(8, 13, 24, 0.9) 100%);
+      }
+      .content { justify-content: flex-end; padding-bottom: 14vh; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cta { transition: none; }
+      .cta:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <picture>
+      <source srcset="assets/hero.webp" type="image/webp">
+      <img src="assets/hero.jpg" alt="A high-rise tower under construction above Sydney Harbour at dusk, with an enclosed automated factory building the top floors" fetchpriority="high">
+    </picture>
+
+    <div class="brand">Climb<span>otics</span></div>
+
+    <div class="content">
+      <h1>Your Australian Partner in High&#8209;Rise Construction</h1>
+      <p class="sub">Building long-term partnerships with equipment manufacturers to bring advanced construction systems to Australia</p>
+      <a class="cta" href="mailto:info@climbotics.com">
+        Get in touch
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
